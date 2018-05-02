@@ -1,4 +1,4 @@
-
+// main run functions
 $(document).ready(function(){
   animateDiv();
   decrement_timer();
@@ -30,6 +30,7 @@ function end_game(){
   reset();
 }
 
+// reset function
 function reset(){
   score_count = 0;
   timer = 20;
@@ -37,6 +38,7 @@ function reset(){
   document.getElementById('score').innerHTML = score_count;
 }
 
+// make a new position for the balloon to go to
 function makeNewPosition(){
 
     // Get viewport dimensions (remove the dimension of the div)
@@ -50,6 +52,7 @@ function makeNewPosition(){
 
 }
 
+// animate the balloons movement 
 function animateDiv(){
     var newq = makeNewPosition();
     $('.balloons').animate({ top: newq[0], left: newq[1] }, 2000, function(){

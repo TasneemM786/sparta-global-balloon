@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Balloon Game</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" src="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -11,12 +11,38 @@
   <body>
     <h1 id='score'>0</h1>
     <h1 id='timer'>0</h1>
-    <div class='balloons'>
-      <img class='balloon_image' src="images/balloon_red.png" alt="balloons" onclick='increment_score()'>
+    <h1 id='target'>0</h1>
+    <h1 id='message'></h1>
+    <div id ='balloon1' class='balloons'>
+      <img class='balloon_image' src="images/red_balloon.png" alt="balloons" onclick='increment_score()'>
     </div>
-    <div class='balloons'></div>
-    <div class='balloons'></div>
-
+    <div id='balloon2' class='balloons'>
+      <img class='balloon_image' src="images/red_balloon.png" alt="balloons" onclick='increment_score()'>
+    </div>
+    <div id='balloon3'class='balloons'>
+      <img class='balloon_image' src="images/red_balloon.png" alt="balloons" onclick='increment_score()'>
+    </div>
+    <div id ='balloon4' class='balloons'>
+      <img class='balloon_image' src="images/red_balloon.png" alt="balloons" onclick='increment_score()'>
+    </div>
+    <div id ='balloon5' class='balloons'>
+      <img class='balloon_image' src="images/red_balloon.png" alt="balloons" onclick='increment_score()'>
+    </div>
+    <div id ='balloon6' class='balloons'>
+      <img class='balloon_image' src="images/black_balloon.png" alt="balloons" onclick='end_game()'>
+    </div>
+    <div id ='balloon7' class='balloons'>
+      <img class='balloon_image' src="images/black_balloon.png" alt="balloons" onclick='end_game()'>
+    </div>
+    <div id ='balloon8' class='balloons'>
+      <img class='balloon_image' src="images/black_balloon.png" alt="balloons" onclick='end_game()'>
+    </div>
+    <div id ='balloon9' class='balloons'>
+      <img class='balloon_image' src="images/black_balloon.png" alt="balloons" onclick='end_game()'>
+    </div>
+    <div id ='balloon10' class='balloons'>
+      <img class='balloon_image' src="images/black_balloon.png" alt="balloons" onclick='end_game()'>
+    </div>
     <script src='index.js'></script>
   </body>
 </html>
